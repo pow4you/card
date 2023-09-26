@@ -14,7 +14,7 @@
         aspect-square
         h-full
         border-r border-white border-solid '>
-      <img 
+      <nuxt-img 
         v-if="img"
         :src=img 
         :alt="platform+' profile picture'"

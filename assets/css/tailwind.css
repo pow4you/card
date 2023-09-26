@@ -58,15 +58,19 @@ p, h1, h2, h3, h4, h5{
 
 h1{
     @apply
-    text-3xl pb-2
+    text-3xl pb-2  max-sm:text-2xl max-sm:leading-8 max-sm:pb-1.5
 }
 
 h2{
     @apply
-    text-2xl pb-2
+    text-2xl pb-2 max-sm:leading-7 max-sm:pb-1
 }
 
 h3{
     @apply
-    text-xl pb-1
+    text-xl pb-1 max-sm:leading-6 max-sm:pb-0.5
+}
+
+p{
+    @apply max-sm:text-sm
 }
