@@ -39,7 +39,7 @@
 }
 
 .frosted-glass {
-    @apply bg-white bg-opacity-25 backdrop-blur-lg
+    @apply bg-white bg-opacity-10 backdrop-blur-lg
 }
 
 body {

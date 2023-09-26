@@ -77,11 +77,11 @@
     
     <SectionCard CardIcon="ph:sparkle-bold" CardTitle="Pronounce" id="Pronouns">
       <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto">
-        <section class="col-span-5 col-start-1 max-sm:col-span-12 transition-all"></section>
-        <section class="col-span-7 col-start-6 max-sm:col-span-12 max-sm:col-start-1 transition-all pb-4">
+        <section class="col-span-5 col-start-1 max-md:col-span-12 transition-all"></section>
+        <section class="col-span-7 col-start-6 max-md:col-span-12 max-sm:col-start-1 transition-all pb-4">
           <h2 class="text-center">Names</h2>
           
-          <ul class="grid grid-cols-3 gap-2.5 text-sm px-4">
+          <ul class="grid grid-cols-3 max-sm:grid-cols-1 gap-2.5 text-sm max-sm:text-xs px-1.5">
             <li class="
               p-2
               drop-shadow-md frosted-glass rounded-lg 
