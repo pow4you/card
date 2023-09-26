@@ -4,7 +4,7 @@
     <div class="p-4">
       <section>
         <h1 class="text-center pb-4"><Icon name="ph:sparkle"></Icon>Hi_ I'm Pow<Icon name="ph:sparkle"></Icon> </h1>
-        <p class="sm:px-12 md:px-24 text-center"><Icon name="ph:caret-double-right-bold"></Icon> Full-Stack Developer / Quantum Engineer</p>
+        <p class="sm:px-12 md:px-24 text-center text-lg"><Icon name="ph:caret-double-right-bold"></Icon> Full-Stack Developer / Quantum Engineer</p>
         <p class="sm:px-12 md:px-24 text-center"><Icon name="ph:caret-double-right-bold"></Icon> Vue <Icon name="file-icons:vue"></Icon>, React <Icon name="simple-icons:react"></Icon>, Tailwind <Icon name="simple-icons:tailwindcss"></Icon>, Qiskit <Icon name="simple-icons:qiskit"></Icon></p>
 
       </section>
@@ -48,6 +48,7 @@
         <section class="col-span-7 col-start-6 max-sm:col-span-12 max-sm:col-start-1 transition-all py-2">
           <div 
           v-for="(section, name) in links"
+          v-if="name!== 'showcase'"
           :key="name"
           
           class="
@@ -81,44 +82,22 @@
       <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto">
         <section class="col-span-5 col-start-1 max-md:col-span-12 transition-all"></section>
         <section class="col-span-7 col-start-6 max-md:col-span-12 max-sm:col-start-1 transition-all pb-4">
-          <h2 class="text-center">Names</h2>
+          <div
+            v-for="(section, name) in pronouns"
+            :key="name"
+          >
           
-          <ul class="grid grid-cols-3 max-sm:grid-cols-1 gap-2.5 text-sm max-sm:text-xs px-1.5">
-            <SectionPronounsListblock
-            heading="Main"
-              :items="['Pow', 'Nasa', 'Danger']"
-            ></SectionPronounsListblock>
+            <h2 class="text-center">{{useCapitalize(name)}}</h2>
             
-            <li class="
-              p-2
-              drop-shadow-md frosted-glass rounded-lg 
-              border-white border-solid border-2
-            ">
-              Fun:
-              <ul class="list-disc ml-4">
-                <li>Cat</li>
-                <li>Ze</li>
-                <li>Nghariad</li>
-              </ul>
-              
-            </li>
-            
-            <li class="
-              p-2
-              drop-shadow-md frosted-glass rounded-lg 
-              border-white border-solid border-2
-            ">
-              Aliases:
-              <ul class="list-disc list-inside">
-                <li>Powo</li>
-                <li>PowowoCat</li>
-                <li>PowCat</li>
-              </ul>
-            </li>
-          </ul>
-          
-          <h2 class="text-center p-0">Pronouns</h2>
-        
+            <ul class="grid grid-cols-3 max-sm:grid-cols-1 gap-2.5 text-sm max-sm:text-xs px-1.5">
+              <SectionPronounsListblock
+                v-for="(items, heading) in section"
+                :key="heading"
+                :heading="heading"
+                :items="items"
+              ></SectionPronounsListblock>
+            </ul>
+          </div>
         </section>
       </div>
     </SectionCard>
@@ -128,10 +107,10 @@
 
 <script lang="ts" setup>
   const appConfig = useAppConfig();
-  const links = appConfig.links;
+  const {links, pronouns} = appConfig;
   
   const showcase = useSampleSize(links.showcase,2)
-  const other = useSlice(links,1)
+  
 </script>
 
 
