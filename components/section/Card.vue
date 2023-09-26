@@ -63,10 +63,22 @@
   const minimized = ref(false);
   const content = ref(null);
   
+  const nuxtApp = useNuxtApp();
+  
   
   onMounted(() => {
     window.addEventListener('resize', resetMaxCalculatedHeight.bind(this));
     resetMaxCalculatedHeight();
+  });
+  
+  nuxtApp.hook('page:finish', () => {
+    nextTick(() => {
+      try {
+        resetMaxCalculatedHeight();
+      } catch (error) {
+        console.error("Couldn't resetMaxCalculatedHeight in hook.page:finish! " + error);
+      }
+    })
   });
   
   
