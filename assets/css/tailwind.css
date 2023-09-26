@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply scroll-smooth
+}
+
+.bg-periwinkle {
+    background-color: #dcd6f745;
+}
+
+.text-deep-purple {
+    color: #330C2F;
+}
+
+.bg-maize {
+    background-color: #F5E663;
+}
+
+.bg-sandy-brown {
+    background-color: #ffd0aa;
+}
+
+.bg-light-thulian-pink {
+    background-color: #e592b5;
+
+}
+
+.bg-thulian-pink {
+    background-color: #E56399;
+}
+
+.thulian-button {
+    @apply bg-light-thulian-pink
+}
+.thulian-button:hover {
+    @apply bg-thulian-pink
+}
+
+.frosted-glass {
+    @apply bg-white bg-opacity-25 backdrop-blur-lg
+}
+
+body {
+    @apply bg-sandy-brown text-deep-purple;
+}
+
+p, h1, h2, h3, h4, h5{
+    @apply
+    break-words
+    hyphens-auto
+}
+
+h1{
+    @apply
+    text-4xl pb-2
+}
+
+h2{
+    @apply
+    text-3xl pb-2
+}
+
+h3{
+    @apply
+    text-2xl pb-1
+}
