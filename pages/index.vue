@@ -79,16 +79,13 @@
     
     <SectionCard CardIcon="ph:sparkle-bold" CardTitle="Pronounce" id="Pronouns">
       <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto ">
-        <section class="flex flex-col col-span-4 max-sm:col-span-5 transition-all gap-2">
-          <h1 class="text-center">What's Pow?</h1>
+        <section class="flex flex-col col-span-4 max-sm:col-span-5 transition-all gap-1">
+          <h1 class="text-center">What's a Pow?</h1>
           
-          <SectionPronounsPrideflag
-            class="h-5"
-            flag="lesbian"
-          ></SectionPronounsPrideflag>
+          <nuxt-img src="/assets/images/tis_a_pow.webp"></nuxt-img>
           
           <p class="text-justify  sm:pr-2">
-            Pow is a 21 year old transbian that lives in Austria. 
+            Pow is a 21 year old trans webdev that resides in Vienna. 
           </p>
           
           <SectionPronounsPrideflag

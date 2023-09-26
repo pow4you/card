@@ -1,52 +1,24 @@
 {
-
-  "showcase": [
-    {
-      "platform": "github",
-      "name": "Github",
-      "user": "pow4you",
-      "link": "https://github.com/pow4you",
-      "img": "https://avatars.githubusercontent.com/u/129770852",
-      "description": "Pow4you on Github. There you can find whatever I'm currently working on, what I'm learning and what I'm trying to learn.",
-      "icon": "ph:github-logo-bold"
-    },
-    {
-      "platform": "discord",
-      "name": "Discord",
-      "user": "powowocat",
-      "link": "https://discord.com/users/powowocat",
-      "img": "https://cdn.discordapp.com/avatars/327795737771376640/878464b244022570b0ac1df0983d356a?size=1024",
-      "description": "Connect with me on Discord.",
-      "icon": "ph:discord-logo"
-    },
-    {
-      "platform": "instagram",
-      "name": "Cosplay Instagram",
-      "user": "powcosplay",
-      "img": false,
-      "link": "https://instagram.com/powcosplay",
-      "description": "Follow my cosplay journey on Instagram.",
-      "icon": "ph:instagram-logo-thin"
-    }
-  ],
   "socials": [
     {
       "platform": "github",
       "name": "Github",
       "user": "pow4you",
       "link": "https://github.com/pow4you",
-      "img": "https://avatars.githubusercontent.com/u/129770852",
+      "img": "/assets/images/github.png",
       "description": "Pow4you on Github. There you can find whatever I'm currently working on, what I'm learning and what I'm trying to learn.",
-      "icon": "ph:github-logo-bold"
+      "icon": "fa6-brands:github",
+      "spotlight":true
     },
     {
       "platform": "discord",
       "name": "Discord",
       "user": "powowocat",
       "link": "https://discord.com/users/powowocat",
-      "img": "https://cdn.discordapp.com/avatars/327795737771376640/878464b244022570b0ac1df0983d356a?size=1024",
+      "img": "/assets/images/discord.webp",
       "description": "Connect with me on Discord.",
-      "icon": "ph:discord-logo"
+      "icon": "fa6-brands:discord",
+      "spotlight":true
     },
     {
       "platform": "instagram",
@@ -55,35 +27,76 @@
       "img": false,
       "link": "https://instagram.com/powcosplay",
       "description": "Follow my cosplay journey on Instagram.",
-      "icon": "ph:instagram-logo-thin"
+      "icon": "fa6-brands:instagram",
+      "spotlight":true
     },
     {
       "platform": "instagram",
       "name": "Personal Instagram",
       "user": "powowocat",
-      "img": false,
+      "img": "/assets/images/personal_ig.webp",
       "link": "https://instagram.com/powowocat",
       "description": "Check out my personal Instagram profile.",
-      "icon": "ph:instagram-logo-thin"
+      "icon": "fa6-brands:instagram"
     },
     {
       "platform": "twitter",
       "name": "Twitter",
       "user": "PowowoCat",
-      "img": false,
+      "img": "/assets/images/twitter.webp",
       "link": "https://twitter.com/PowowoCat",
       "description": "Follow me on Twitter for updates and tweets.",
-      "icon": "ph:twitter-logo-thin"
+      "icon": "fa6-brands:twitter"
     },
     {
       "platform": "bsky",
       "name": "BlueSky",
       "user": "pow.bsky.social",
-      "img": false,
+      "img": "/assets/images/bsky.webp",
       "link": "https://bsky.app/profile/pow.bsky.social",
       "description": "Find me on Bsky for more updates.",
-      "icon": "ph:cloud-sun-thin"
+      "icon": "ph:cloud-sun-fill"
+    },
+    {
+      "platform": "tumblr",
+      "name": "Tumblr",
+      "user": "powowo",
+      "img": "/assets/images/tumblr.webp",
+      "link": "https://www.tumblr.com/powowo",
+      "description": "Friendly blog, I don't really use that often...",
+      "icon": "fa6-brands:tumblr"
+    },
+    {
+      "platform": "tiktok",
+      "name": "TikTok",
+      "user": "https51",
+      "img": "/assets/images/tiktok.webp",
+      "link": "https://www.tiktok.com/@https51",
+      "description": "This is my TikTok Profile, where I post all sorts of skits and videos.",
+      "icon": "fa6-brands:tiktok"
+    },
+    {
+      "platform": "youtube",
+      "name": "YouTube",
+      "user": "powcat",
+      "img": false,
+      "link": "https://www.youtube.com/@powcat",
+      "description": "This is my creative outlet. Most of what's on this channel is music, but I'll occasionally also post YTPs, memes and parodies.",
+      "icon": "fa6-brands:youtube"
     }
-  ]
+  ],
+  "links": [
+    {
+      "platform": "github",
+      "name": "Github",
+      "user": "pow4you",
+      "link": "https://github.com/pow4you",
+      "img": "/assets/images/github.png",
+      "description": "Pow4you on Github. There you can find whatever I'm currently working on, what I'm learning and what I'm trying to learn.",
+      "icon": "fa6-brands:github",
+      "spotlight":true
+    }
   
+  
+  ]
 }
