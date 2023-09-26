@@ -1,6 +1,6 @@
 <template>
   <div class="
-      max-md:w-full md:w-5/6 lg:w-2/3 h-fit
+      max-md:w-11/12 md:w-5/6 lg:w-2/3 h-fit
       flex flex-col
       rounded-lg frosted-glass shadow-xl
       border-purple-100 border

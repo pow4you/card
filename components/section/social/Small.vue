@@ -1,18 +1,17 @@
 <template>
   <li
     class="
-      grid grid-rows-1 grid-cols-[auto_1fr]
+      flex items-stretch
       
       drop-shadow-md frosted-glass rounded-lg 
       border-white border-solid border-2
     ">
     <div
       class='
-        p-0.5 row-span-2 row-start-1 col-span-1 col-start-1 
+        p-0.5 
         grid justify-center content-center
         
-        aspect-square
-        h-full
+        
         border-r border-white border-solid '>
       <nuxt-img 
         v-if="img"
@@ -23,13 +22,13 @@
       />
       <Icon
         v-else
-        class="h-full w-full p-1.5 max-h-16 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
+        class="overflow-visible h-full w-full p-1.5 max-h-16 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
         size="5rem"
         :name=icon
         />
     </div>
     <NuxtLink :to="link" class="
-      row-span-1 row-start-1 col-span-1 col-start-2
+      flex-grow
       px-4 py-1 
       
       cursor-pointer
