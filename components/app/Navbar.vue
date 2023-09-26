@@ -5,9 +5,12 @@
       w-full
       p-2
       
+      max-sm:text-xs text-sm
+      
       frosted-glass backdrop-blur-lg shadow-lg
       
       flex gap-4 place-content-center
+      max-sm:gap-2
     "
   >
     
@@ -20,9 +23,9 @@
         row-start-1 row-span-1
         col-start-auto col-span-1
         
-        flex gap-1 vertical-align-middle text-sm
+        flex gap-1 vertical-align-middle
         
-        px-3 py-1 frosted-glass rounded shadow-sm
+        px-3 max-sm:px-2 py-1 frosted-glass rounded shadow-sm
         
         border-purple-100 border
         
@@ -31,7 +34,7 @@
       "
     >
       
-      <Icon class="aspect-square vertical-align-middle" size="1.125rem" 
+      <Icon class="aspect-square vertical-align-middle h-full"  
         :name="$route.fullPath == link.path ? link.active_icon : link.icon"
       /> {{ link.title }}
     </NuxtLink>

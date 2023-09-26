@@ -35,7 +35,7 @@
       
       cursor-pointer
       transition duration-300 ease-in-out 
-      bg-transparent bg-opacity-0 hover:bg-pink-700 hover:bg-opacity-10 
+      pink-hover
       border-solid border-b border-white
     ">
       <span class="text-lg font-bold">

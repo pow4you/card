@@ -42,6 +42,10 @@
     @apply bg-white bg-opacity-10
 }
 
+.pink-hover {
+    @apply bg-transparent hover:bg-pink-300/25
+}
+
 body {
     @apply bg-sandy-brown text-deep-purple;
 }
