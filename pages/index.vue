@@ -14,22 +14,22 @@
 
   <SectionCard CardIcon="ph:heart-bold" CardTitle="Socials and Links" id="Socials">
       <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto max-sm:gap-1">
-        
-        <SectionSocialLarge
-          class="max-md:col-span-12 col-span-6"
-          
-          v-for="(showcase, index) in useSampleSize(showcaseList,2)"
-          :key="index"
-          
-          :link="showcase.link"
-          :img="showcase.img"
-          :user="showcase.user"
-          :name="showcase.name"
-          :platform="showcase.platform"
-          :icon="showcase.icon"
-          :description="showcase.description"
-        ></SectionSocialLarge>
-        
+        <ClientOnly>
+          <SectionSocialLarge
+            class="max-md:col-span-12 col-span-6 max-md:[&:not(:first-of-type)]:hidden"
+            
+            v-for="(showcase, index) in useSampleSize(showcaseList,2)"
+            :key="index"
+            
+            :link="showcase.link"
+            :img="showcase.img"
+            :user="showcase.user"
+            :name="showcase.name"
+            :platform="showcase.platform"
+            :icon="showcase.icon"
+            :description="showcase.description"
+          ></SectionSocialLarge>
+        </ClientOnly>
         <section class="col-span-4 col-start-1 max-sm:col-span-12 transition-all py-4 max-sm:pb-0">
           <h1 class="text-center">Socials</h1>
           <p class="text-justify  sm:pr-2">
@@ -53,11 +53,13 @@
           
           class="
             
-            flex flex-col gap-2 py-2 lg:grid lg:grid-cols-2 max-sm:py-0
+            flex flex-col gap-2 py-2 xl:grid xl:grid-cols-2 max-sm:py-0
           ">
             <h2 class="text-center col-span-2">{{ useCapitalize(name) }}</h2>
             
             <SectionSocialSmall
+              class="xl:even:last-of-type:col-span-2"
+            
               v-for="(data, i) in section"
               :key="i"
               
@@ -82,10 +84,15 @@
         <section class="flex flex-col col-span-4 transition-all gap-1">
           <h1 class="text-center">What's a Pow?</h1>
           
-          <nuxt-img src="/assets/images/tis_a_pow.webp"></nuxt-img>
+          <nuxt-img src="/assets/images/tis_a_pow.webp" alt="this ia a pow">
+            <SectionPronounsPrideflag
+              class="h-5"
+              flag="lesbian"
+            ></SectionPronounsPrideflag>          
+          </nuxt-img>
           
           <p class="text-justify  sm:pr-2">
-            Pow is a 21 year old trans webdev that resides in Vienna. 
+            Pow is a 21 year old trans webdev that resides in Vienna. Find out more on the [ <NuxtLink to="/about" class="underline decoration-dotted hover:decoration-solid">about</NuxtLink> ] page. ;)
           </p>
           
           <SectionPronounsPrideflag
@@ -107,7 +114,7 @@
           
             <h2 class="text-center">{{useCapitalize(name)}}</h2>
             
-            <ul class="grid grid-cols-3 max-sm:grid-cols-2 gap-2.5 max-sm:gap-1 text-sm max-sm:text-xs px-1.5">
+            <ul class="grid auto-cols-auto grid-flow-row-dense max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 gap-2.5 max-sm:gap-1 text-sm max-sm:text-xs px-1.5">
               <SectionPronounsListblock
                 v-for="(items, heading) in section"
                 :key="heading"
@@ -124,6 +131,8 @@
 </template>
 
 <script lang="ts" setup>
+import { LazyClientOnly } from '#build/components';
+
   const appConfig = useAppConfig();
   const {links, pronouns} = appConfig;
   
