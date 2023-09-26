@@ -1,7 +1,7 @@
 <template>
   <li
     class="
-      grid grid-rows-[0.5fr_auto] grid-cols-[auto_1fr] auto-cols-min
+      flex items-stretch
       w-full h-full 
       
       drop-shadow-md frosted-glass rounded-lg 
@@ -9,11 +9,14 @@
     ">
     <div
       class='
-        p-2 row-span-2 row-start-1 col-span-1 col-start-1 
         grid justify-center content-center
-        
+        max-h-40
+        min-w-fit
         aspect-square
-        h-full w-full
+        flex-shrink
+        p-2
+        
+        
         border-r border-white border-solid '>
       <nuxt-img 
         v-if="img"
@@ -29,26 +32,28 @@
         />
       
     </div>
-    <NuxtLink :to="link" class="
-      row-span-1 row-start-1 col-span-1 col-start-2
-      px-4 py-1 
+    <div class="flex-grow flex flex-col items-stretch">
+      <NuxtLink :to="link" class="
+        px-4 py-1 
+        
+        cursor-pointer
+        transition duration-300 ease-in-out 
+        pink-hover
+        border-solid border-b border-white
+      ">
+        <span class="text-lg font-bold">
+          <Icon class="aspect-square vertical-align-middle" 
+              :name=icon
+          /> {{ name }}
+        </span> <br />
+        <span class="text-sm">
+          @{{ user }}
+        </span>
+      </NuxtLink>
       
-      cursor-pointer
-      transition duration-300 ease-in-out 
-      pink-hover
-      border-solid border-b border-white
-    ">
-      <span class="text-lg font-bold">
-        <Icon class="aspect-square vertical-align-middle" 
-            :name=icon
-        /> {{ name }}
-      </span> <br />
-      <span class="text-sm">
-        @{{ user }}
-      </span>
-    </NuxtLink>
-    <div class="row-span-1 row-start-2 col-span-1 col-start-2 text-xs p-4">
-      {{ description }}
+      <div class="flex-grow text-xs p-4">
+        {{ description }}
+      </div>
     </div>
   </li>
 </template>
