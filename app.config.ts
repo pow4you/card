@@ -1,4 +1,5 @@
 import links from "@/conf/links.json";
+import pronouns from "@/conf/pronouns.json";
 
 export default defineAppConfig({
     navigation: [
@@ -8,9 +9,7 @@ export default defineAppConfig({
         {path: "/about", title: "About", icon: "ph:book-open-text-light", active_icon: "ph:book-open-text-bold"},
     ],
     
-    
-    
-    
+    pronouns : pronouns,
     links : links,
 
     ger_host: false

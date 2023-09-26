@@ -3,8 +3,10 @@
 	<SectionCard CardIcon="ph:house-bold" CardTitle="Home" id="Home">
     <div class="p-4">
       <section>
-        <h1 class="text-center"><Icon name="ph:sparkle"></Icon>Hi_ I'm Pow<Icon name="ph:sparkle"></Icon> </h1>
-        <p class="p-4 sm:px-12 md:px-24"><Icon name="ph:caret-double-right-bold"></Icon>Full-Stack Developer / Quantum Engineer  </p>
+        <h1 class="text-center pb-4"><Icon name="ph:sparkle"></Icon>Hi_ I'm Pow<Icon name="ph:sparkle"></Icon> </h1>
+        <p class="sm:px-12 md:px-24 text-center"><Icon name="ph:caret-double-right-bold"></Icon> Full-Stack Developer / Quantum Engineer</p>
+        <p class="sm:px-12 md:px-24 text-center"><Icon name="ph:caret-double-right-bold"></Icon> Vue <Icon name="file-icons:vue"></Icon>, React <Icon name="simple-icons:react"></Icon>, Tailwind <Icon name="simple-icons:tailwindcss"></Icon>, Qiskit <Icon name="simple-icons:qiskit"></Icon></p>
+
       </section>
     </div>
       
@@ -82,18 +84,10 @@
           <h2 class="text-center">Names</h2>
           
           <ul class="grid grid-cols-3 max-sm:grid-cols-1 gap-2.5 text-sm max-sm:text-xs px-1.5">
-            <li class="
-              p-2
-              drop-shadow-md frosted-glass rounded-lg 
-              border-white border-solid border-2
-            ">
-              Main:
-              <ul class="list-disc ml-4">
-                <li>Pow/Powowo</li>
-                <li>Nasa</li>
-                <li>Danger</li>
-              </ul>
-            </li>
+            <SectionPronounsListblock
+            heading="Main"
+              :items="['Pow', 'Nasa', 'Danger']"
+            ></SectionPronounsListblock>
             
             <li class="
               p-2
@@ -115,7 +109,7 @@
               border-white border-solid border-2
             ">
               Aliases:
-              <ul class="list-disc ml-4">
+              <ul class="list-disc list-inside">
                 <li>Powo</li>
                 <li>PowowoCat</li>
                 <li>PowCat</li>
