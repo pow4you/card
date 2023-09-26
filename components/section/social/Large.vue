@@ -23,7 +23,7 @@
       />
       <Icon
         v-else
-        class="h-full w-full p-4 max-h-24 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
+        class="overflow-visible h-full w-full p-4 max-h-24 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
         size="5rem"
         :name=icon
         />

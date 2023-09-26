@@ -17,7 +17,7 @@
       "gay" | "gay-7bars" | 
       "lesbian" | "lesbian-7bars" | 
       "bi" | "pan" | 
-      "ace" | "asexual" | "aro" | "aromantic" |
+      "ace" | "asexual" | "aro" | "aromantic" | "demi" | "demisexual" |
       
       "trans" | "transgender" | "enby" | "non-binary"
     ;
@@ -151,6 +151,17 @@
 		#fff 25%, 50%,
 		#95d 50%, 75%,
 		#222 75%);
+}
+
+.demi, .demisexual {
+    background: linear-gradient(
+        var(--orientation),
+        #000 20%,
+        #fff 20%, 40%,
+        #808 40%, 60%,
+        #fff 60%, 80%,
+        #000 80%
+    );
 }
 
 
