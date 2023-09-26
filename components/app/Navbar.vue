@@ -5,7 +5,7 @@
       w-full
       p-2
       
-      frosted-glass shadow-lg
+      frosted-glass backdrop-blur-lg shadow-lg
       
       flex gap-4 place-content-center
     "
