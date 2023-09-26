@@ -5,7 +5,7 @@
       <section>
         <h1 class="text-center pb-4"><Icon name="ph:sparkle"></Icon>Hi_ I'm Pow<Icon name="ph:sparkle"></Icon> </h1>
         <p class="sm:px-12 md:px-24 text-center text-lg"><Icon name="ph:caret-double-right-bold"></Icon> Full-Stack Developer / Quantum Engineer</p>
-        <p class="sm:px-12 md:px-24 text-center"><Icon name="ph:caret-double-right-bold"></Icon> Vue <Icon name="file-icons:vue"></Icon>, React <Icon name="simple-icons:react"></Icon>, Tailwind <Icon name="simple-icons:tailwindcss"></Icon>, Qiskit <Icon name="simple-icons:qiskit"></Icon></p>
+        <p class="sm:px-12 md:px-24 text-center text-lg"><Icon name="ph:caret-double-right-bold"></Icon> Vue <Icon name="file-icons:vue"></Icon>, React <Icon name="simple-icons:react"></Icon>, Tailwind <Icon name="simple-icons:tailwindcss"></Icon>, Qiskit <Icon name="simple-icons:qiskit"></Icon></p>
 
       </section>
     </div>
@@ -48,17 +48,16 @@
         <section class="col-span-7 col-start-6 max-sm:col-span-12 max-sm:col-start-1 transition-all py-2">
           <div 
           v-for="(section, name) in links"
-          v-if="name!== 'showcase'"
           :key="name"
           
           class="
             
             flex flex-col gap-2 py-2
           ">
-            
-            <h2 class="text-center">{{ useCapitalize(name) }}</h2>
+            <h2 v-if="name != 'showcase'" class="text-center">{{ useCapitalize(name) }}</h2>
             
             <SectionSocialSmall
+              v-if="name != 'showcase'"
               v-for="(data, i) in section"
               :key="i"
               
@@ -80,11 +79,14 @@
     
     <SectionCard CardIcon="ph:sparkle-bold" CardTitle="Pronounce" id="Pronouns">
       <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto">
-        <section class="col-span-5 col-start-1 max-md:col-span-12 transition-all"></section>
-        <section class="col-span-7 col-start-6 max-md:col-span-12 max-sm:col-start-1 transition-all pb-4">
+        <section class="col-span-4 col-start-1 transition-all"></section>
+        <section class="col-span-8 col-start-5 transition-all pb-4">
           <div
             v-for="(section, name) in pronouns"
             :key="name"
+            class="
+              flex flex-col gap-2 py-2
+            "
           >
           
             <h2 class="text-center">{{useCapitalize(name)}}</h2>

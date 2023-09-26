@@ -15,6 +15,7 @@
     "yaml-loader": "^0.8.0"
   },
   "dependencies": {
+    "@nuxt/image": "^1.0.0-rc.2",
     "nuxt-icon": "^0.5.0",
     "nuxt-lodash": "^2.5.0"
   }
