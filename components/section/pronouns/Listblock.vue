@@ -3,10 +3,10 @@
     drop-shadow-md frosted-glass rounded-lg 
     border-white border-solid border-2
   ">
-    <div class="px-3 py-2 border-b border-white border-solid">
-      <span class="font-bold">{{heading}}:</span>
+    <div class="px-3 py-2 border-b border-white border-solid bg-periwinkle">
+      <span class="">{{heading}}:</span>
     </div>
-    <ul class="list-disc list-inside py-1">
+    <ul class="list-disc list-inside py-1.5">
       <li
         v-for="(item, index) in items"
         :key="index"
