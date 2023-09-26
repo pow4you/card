@@ -1,5 +1,5 @@
 {
-    "Names": {
+    "names": {
         "Main": [
             "Pow", 
             "Nasa", 
@@ -13,7 +13,7 @@
             "Nghariad"
         ]
     },
-    "Pronouns": {
+    "pronouns": {
         "Always": [
             "She/Her", 
             "It/Its" 
