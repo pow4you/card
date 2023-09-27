@@ -63,25 +63,13 @@
   const minimized = ref(false);
   const content = ref(null);
   
-  const nuxtApp = useNuxtApp();
-  
-  
   onMounted(() => {
-    window.addEventListener('resize', resetMaxCalculatedHeight.bind(this));
-    resetMaxCalculatedHeight();
-  });
-  
-  nuxtApp.hook('page:finish', () => {
     nextTick(() => {
-      try {
-        resetMaxCalculatedHeight();
-      } catch (error) {
-        console.error("Couldn't resetMaxCalculatedHeight in hook.page:finish! " + error);
-      }
-    })
+      unsetMaxHeight();
+    });
   });
   
-  
+  nextTick()
 
   const toggleMinimized = ()=>{
     minimized.value =!minimized.value;
@@ -91,16 +79,38 @@
     
     if (!minimized.value) {
       // animate to max height
-      resetMaxCalculatedHeight();
+      content.value.style.maxHeight = "0px";
+      
+      setTimeout(() => {
+        resetMaxCalculatedHeight()
+      }, 1);
+      
+      setTimeout(unsetMaxHeight, 500);
+
     }else {
       // animate to 0 height
-      content.value.style.maxHeight = "0px";
+      resetMaxCalculatedHeight();
+      
+      setTimeout(() => {
+        content.value.style.maxHeight = "0px";
+      }, 1);
+      
       
     }
   };
   
   const resetMaxCalculatedHeight = () => {
-    content.value.style.maxHeight = content.value.scrollHeight + "px";
+    let maxHeight = Math.min(
+      content.value.scrollHeight,
+      window.innerHeight + 50
+    );
+  
+    content.value.style.maxHeight = maxHeight + "px";
+  }
+  
+  const unsetMaxHeight = () => {
+    content.value.style.maxHeight = "";
+    
   }
   
 </script>
