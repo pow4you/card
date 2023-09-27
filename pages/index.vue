@@ -48,19 +48,21 @@
         
         <section class="col-span-8 col-start-5 max-sm:col-span-12 max-sm:col-start-1 transition-all py-2 max-sm:py-0">
           <div 
-          v-for="(section, name) in links"
-          :key="name"
+          v-for="(section, i) in links"
+          :key="i"
           
           class="
             
             flex flex-col gap-2 py-2 xl:grid xl:grid-cols-2 max-sm:py-0
           ">
-            <h2 class="text-center col-span-2">{{ useCapitalize(name) }}</h2>
+            <h2 class="text-center col-span-2"> 
+              <Icon class="-mt-1 mr-1" :name="section.icon"></Icon>{{ useCapitalize(section.name) }}
+            </h2>
             
             <SectionSocialSmall
               class="xl:even:last-of-type:col-span-2"
             
-              v-for="(data, i) in section"
+              v-for="(data, i) in section.items"
               :key="i"
               
               :link="data.link"
@@ -81,7 +83,7 @@
     
     <SectionCard CardIcon="ph:sparkle-bold" CardTitle="Pronounce" id="Pronouns">
       <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto ">
-        <section class="flex flex-col col-span-4 transition-all gap-1">
+        <section class="flex flex-col col-span-4 transition-all gap-1 max-sm:hidden ">
           <h1 class="text-center">What's a Pow?</h1>
           
           <nuxt-img src="/assets/images/tis_a_pow.webp" alt="this ia a pow">
@@ -103,20 +105,22 @@
           //Donate button//
           
         </section>
-        <section class="col-span-8 transition-all pb-4">
+        <section class="col-span-8 transition-all pb-4 max-sm:col-span-12">
           <div
-            v-for="(section, name) in pronouns"
-            :key="name"
+            v-for="(section, i) in pronouns"
+            :key="i"
             class="
               flex flex-col gap-2 max-sm:gap-1 py-2
             "
           >
           
-            <h2 class="text-center">{{useCapitalize(name)}}</h2>
+            <h2 class="text-center">
+              <Icon class="-mt-1 mr-1" :name="section.icon"></Icon>{{ useCapitalize(section.name) }}
+            </h2>
             
-            <ul class="grid auto-cols-auto grid-flow-row-dense max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 gap-2.5 max-sm:gap-1 text-sm max-sm:text-xs px-1.5">
+            <ul class="grid auto-cols-auto grid-flow-row-dense max-lg:grid-cols-2 grid-cols-3 gap-2.5 max-sm:gap-1.5 text-sm max-sm:text-xs px-1.5">
               <SectionPronounsListblock
-                v-for="(items, heading) in section"
+                v-for="(items, heading) in section.items"
                 :key="heading"
                 :heading="heading"
                 :items="items"
@@ -136,8 +140,8 @@ import { LazyClientOnly } from '#build/components';
   const appConfig = useAppConfig();
   const {links, pronouns} = appConfig;
   
-  const showcaseList = Object.values(links).flat().filter(element => element.spotlight === true );
-  
+  const showcaseList = links.flatMap(section => section.items).filter(item => item.spotlight);
+  console.log(showcaseList);
   
 </script>
 

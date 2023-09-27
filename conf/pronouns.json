@@ -1,31 +1,46 @@
-{
-    "names": {
-        "Main": [
-            "Pow", 
-            "Nasa", 
-            "Danger"
-        ],
-        "For fun": [
-            "Cat"
-        ],
-        "Aliases": [
-            "Powo", 
-            "Nghariad"
-        ]
+[
+    {
+        "name": "names",
+        "icon": "ph:signature",
+        "items": {
+            "Main": [
+                "Pow", 
+                "Nasa", 
+                "Danger"
+            ],
+            "For fun": [
+                "Cat"
+            ],
+            "Aliases": [
+                "Powo", 
+                "Nghariad"
+            ]
+        }
     },
-    "pronouns": {
-        "Always": [
-            "She/Her", 
-            "It/Its" 
-        ],
-        "For fun": [
-            "Cat/Cat's"
-        ],
-        "Rarely": [
-            "They/Them"
-        ],
-        "Never": [
-            "He/Him"
-        ]
+    {
+        "name": "pronouns",
+        "icon": "ph:tag",
+        "items": {
+            "Always": [
+                "She/Her", 
+                "It/Its" 
+            ],
+            "For fun": [
+                "Cat/Cat's"
+            ],
+            "Rarely": [
+                "They/Them"
+            ],
+            "Never": [
+                "He/Him"
+            ]
+        }
+    },
+    {
+        "name": "words",
+        "icon": "ph:scroll",
+        "items": {
+        
+        }
     }
-}
+]
