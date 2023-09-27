@@ -30,30 +30,30 @@
             :description="showcase.description"
           ></SectionSocialLarge>
         </ClientOnly>
-        <section class="col-span-4 col-start-1 max-sm:col-span-12 transition-all py-4 max-sm:pb-0">
+        <section class="col-span-4 col-start-1 max-sm:col-span-12 transition-all py-4 max-sm:py-2 max-sm:pb-0">
           <h1 class="text-center">Socials</h1>
           <p class="text-justify  sm:pr-2">
             This is my list of social media links. Basically everywhere I have an account that may be active or inactive, as well as Project pages I've been working on. So like basically my life lol.
           </p>
           <br />
           
-          <span class="max-sm:hidden">
           
-            <h2 class="text-center">Spotlight</h2>
-            <p class="text-justify  sm:pr-2">
-            </p>
+        
+          <h2 class="text-center max-sm:hidden">Spotlight</h2>
+          <p class="text-justify sm:pr-2 max-sm:hidden">
+          </p>
             
-          </span>
+
         </section>
         
-        <section class="col-span-8 col-start-5 max-sm:col-span-12 max-sm:col-start-1 transition-all py-2 max-sm:py-0">
+        <section class="col-span-8 col-start-5 max-sm:col-span-12 max-sm:col-start-1 transition-all py-2 max-sm:py-0 max-sm:-mt-5">
           <div 
           v-for="(section, i) in links"
           :key="i"
           
           class="
             
-            flex flex-col gap-2 py-2 xl:grid xl:grid-cols-2 max-sm:py-0
+            flex flex-col gap-2 py-2 xl:grid xl:grid-cols-2 max-sm:py-2
           ">
             <h2 class="text-center col-span-2"> 
               <Icon class="-mt-1 mr-1" :name="section.icon"></Icon>{{ useCapitalize(section.name) }}
@@ -83,7 +83,10 @@
     
     <SectionCard CardIcon="ph:sparkle-bold" CardTitle="Pronounce" id="Pronouns">
       <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto ">
-        <section class="flex flex-col col-span-4 transition-all gap-1 max-sm:hidden ">
+        
+        <section 
+          class="flex flex-col col-span-4 transition-all gap-1 max-sm:hidden "
+        >
           <h1 class="text-center">What's a Pow?</h1>
           
           <nuxt-img src="/assets/images/tis_a_pow.webp" alt="this ia a pow">
@@ -141,7 +144,6 @@ import { LazyClientOnly } from '#build/components';
   const {links, pronouns} = appConfig;
   
   const showcaseList = links.flatMap(section => section.items).filter(item => item.spotlight);
-  console.log(showcaseList);
   
 </script>
 
