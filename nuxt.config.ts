@@ -4,7 +4,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@nuxt/image',
-    "nuxt-lodash"
+    "nuxt-lodash",
+    "@nuxtjs/device"
   ],
   
   devtools: { enabled: true }
