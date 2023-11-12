@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/image',
     "nuxt-lodash",
-    "@nuxtjs/device"
+    "@nuxtjs/device",
   ],
   
   devtools: { enabled: true }

@@ -7,3 +7,9 @@
     </NuxtLayout>
   </div>
 </template>
+
+<script lang="ts" setup>
+  useHead({
+    title: "😽Pow's Card"
+  })
+</script>
