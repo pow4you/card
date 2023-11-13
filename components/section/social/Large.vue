@@ -41,19 +41,19 @@
         pink-hover
         border-solid border-b border-white
       ">
-        <span class="text-lg font-bold">
+        <header class="text-lg font-bold tracking-wide">
           <Icon class="aspect-square vertical-align-middle" 
               :name=icon
           /> {{ name }}
-        </span> <br />
-        <span class="text-sm">
-          @{{ user }}
-        </span>
+        </header>
+        <p class="text-sm tracking-wide">
+          {{ user ? user : link }}
+        </p>
       </NuxtLink>
       
-      <div class="flex-grow text-xs p-4">
+      <p class="flex-grow text-xs tracking-normal p-4">
         {{ description }}
-      </div>
+      </p>
     </div>
   </li>
 </template>

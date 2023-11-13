@@ -3,7 +3,11 @@
 	<SectionCard CardIcon="ph:house-bold" CardTitle="Home" id="Home">
     <div class="p-4">
       <section>
-        <h1 class="text-center pb-4"><Icon name="ph:sparkle"></Icon>Hi_ I'm Pow<Icon name="ph:sparkle"></Icon> </h1>
+        <h1 class="text-center pb-4">
+          <Icon class="mx-.5" name="ph:sparkle"></Icon>
+          Hi_ I'm Pow
+          <Icon class="mx-.5" name="ph:sparkle"></Icon>         
+        </h1>
         <p class="text-center text-lg max-sm:text-base"><Icon name="ph:caret-double-right-bold"></Icon> Full-Stack Developer / Quantum Engineer</p>
         <p class="text-center text-lg max-sm:text-base"><Icon name="ph:caret-double-right-bold"></Icon> Vue <Icon name="file-icons:vue"></Icon>, React <Icon name="simple-icons:react"></Icon>, Tailwind <Icon name="simple-icons:tailwindcss"></Icon>, Qiskit <Icon name="simple-icons:qiskit"></Icon></p>
 
@@ -67,7 +71,7 @@
               
               :link="data.link"
               :img="data.img"
-              :user="data.user"
+              :user="data.user? data.user : data.description"
               :name="data.name"
               :platform="data.platform"
               :icon="data.icon"

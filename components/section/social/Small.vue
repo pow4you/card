@@ -11,6 +11,9 @@
         p-0.5 
         grid justify-center content-center
         
+        h-20 w-20
+        
+        aspect-square
         
         border-r border-white border-solid '>
       <nuxt-img 
@@ -34,15 +37,17 @@
       cursor-pointer
       transition duration-300 ease-in-out 
       pink-hover
+      
+      flex flex-col
     ">
-      <span class="text-md font-bold">
+      <header class="text-md font-bold tracking-wide">
         <Icon class="aspect-square vertical-align-middle" 
             :name=icon
         /> {{ name }}
-      </span> <br />
-      <span class="text-xs">
-        @{{ user }}
-      </span>
+      </header>
+      <p class="text-xs justify-self-center grow tracking-wide">
+        {{ user }}
+      </p>
     </NuxtLink>
   </li>
 </template>

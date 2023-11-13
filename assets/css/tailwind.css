@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Argon';
+    src: url('/fonts/Argon/Argon.woff2') format('woff2');
+    alt: url('/fonts/Argon/Argon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telex';
+    src: url('/fonts/Telex/Telex.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    font-size: 11pt;
+}
+
 *{
-    @apply scroll-smooth scroll-mt-16
+    @apply scroll-smooth scroll-mt-16 font-telex tracking-tight
 }
 
 .bg-periwinkle {
@@ -47,6 +68,13 @@
 }
 
 
+.font-argon{
+    font-family: 'Argon', mono;
+}
+
+.font-telex{
+    font-family: 'Telex', sans-serif;
+}
 
 body {
     @apply bg-sandy-brown text-deep-purple p-0 m-0 overflow-x-hidden;
@@ -56,6 +84,11 @@ p, h1, h2, h3, h4, h5{
     @apply
     break-words
     hyphens-auto
+}
+
+h1, h2, h3, h4, h5{    
+    @apply
+    text-center 
 }
 
 h1{
@@ -74,5 +107,5 @@ h3{
 }
 
 p{
-    @apply max-sm:text-sm
+    @apply  max-sm:text-sm text-justify 
 }

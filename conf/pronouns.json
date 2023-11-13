@@ -9,7 +9,9 @@
                 "Danger"
             ],
             "For fun": [
-                "Cat"
+                "Cat",
+                "Vriska",
+                "Vrizzy"
             ],
             "Aliases": [
                 "Powo", 
@@ -28,13 +30,6 @@
             "For fun": [
                 "Cat/Cat's"
             ]
-        }
-    },
-    {
-        "name": "words",
-        "icon": "ph:scroll",
-        "items": {
-        
         }
     }
 ]

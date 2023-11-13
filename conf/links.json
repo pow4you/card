@@ -6,17 +6,17 @@
         {
           "platform": "github",
           "name": "Github",
-          "user": "pow4you",
+          "user": "@pow4you",
           "link": "https://github.com/pow4you",
           "img": "/assets/images/github.png",
-          "description": "Pow4you on Github. There you can find whatever I'm currently working on, what I'm learning and what I'm trying to learn.",
+          "description": "Pow4you on Github. There you can find whatever I'm currently working on, what I'm learning and what I'm trying get better at.",
           "icon": "fa6-brands:github",
           "spotlight":true
         },
         {
           "platform": "discord",
           "name": "Discord",
-          "user": "powowocat",
+          "user": "@PowowoCat",
           "link": "https://discord.com/users/powowocat",
           "img": "/assets/images/discord.webp",
           "description": "Connect with me on Discord.",
@@ -26,7 +26,7 @@
         {
           "platform": "instagram",
           "name": "Cosplay Instagram",
-          "user": "powcosplay",
+          "user": "@PowCosplay",
           "img": false,
           "link": "https://instagram.com/powcosplay",
           "description": "Follow my cosplay journey on Instagram.",
@@ -36,7 +36,7 @@
         {
           "platform": "instagram",
           "name": "Personal Instagram",
-          "user": "powowocat",
+          "user": "@PowowoCat",
           "img": "/assets/images/personal_ig.webp",
           "link": "https://instagram.com/powowocat",
           "description": "Check out my personal Instagram profile.",
@@ -45,7 +45,7 @@
         {
           "platform": "twitter",
           "name": "Twitter",
-          "user": "PowowoCat",
+          "user": "@PowowoCat",
           "img": "/assets/images/twitter.webp",
           "link": "https://twitter.com/PowowoCat",
           "description": "Follow me on Twitter for updates and tweets.",
@@ -54,7 +54,7 @@
         {
           "platform": "bsky",
           "name": "BlueSky",
-          "user": "pow.bsky.social",
+          "user": "@pow.bsky.social",
           "img": "/assets/images/bsky.webp",
           "link": "https://bsky.app/profile/pow.bsky.social",
           "description": "Find me on Bsky for more updates.",
@@ -63,7 +63,7 @@
         {
           "platform": "tumblr",
           "name": "Tumblr",
-          "user": "powowo",
+          "user": "@powowo",
           "img": "/assets/images/tumblr.webp",
           "link": "https://www.tumblr.com/powowo",
           "description": "Friendly blog, I don't really use that often...",
@@ -72,7 +72,7 @@
         {
           "platform": "tiktok",
           "name": "TikTok",
-          "user": "https51",
+          "user": "@https51",
           "img": "/assets/images/tiktok.webp",
           "link": "https://www.tiktok.com/@https51",
           "description": "This is my TikTok Profile, where I post all sorts of skits and videos.",
@@ -81,7 +81,7 @@
         {
           "platform": "youtube",
           "name": "YouTube",
-          "user": "powcat",
+          "user": "@powcat",
           "img": false,
           "link": "https://www.youtube.com/@powcat",
           "description": "This is my creative outlet. Most of what's on this channel is music, but I'll occasionally also post YTPs, memes and parodies.",
@@ -90,7 +90,7 @@
         {
           "platform": "steam",
           "name": "Steam",
-          "user": "nghariad",
+          "user": "@nghariad",
           "img": false,
           "link": "https://steamcommunity.com/profiles/76561198202404092",
           "description": "",
@@ -103,13 +103,13 @@
       "icon":"ph:link",
       "items":[
         {
-          "platform": "github",
-          "name": "Github",
-          "user": "pow4you",
-          "link": "https://github.com/pow4you",
-          "img": "/assets/images/github.png",
-          "description": "Pow4you on Github. There you can find whatever I'm currently working on, what I'm learning and what I'm trying to learn.",
-          "icon": "fa6-brands:github",
+          "platform": "coming soon",
+          "name": "Coming Soon",
+          "user": null,
+          "link": "https://soon.pow.gay",
+          "img": null,
+          "description": "Overview page for webprojects I'm currently working on or have already finished. 🛠️",
+          "icon": "noto:building-construction",
           "spotlight":true
         }
       ]
