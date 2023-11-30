@@ -43,24 +43,6 @@
           "icon": "fa6-brands:instagram"
         },
         {
-          "platform": "twitter",
-          "name": "Twitter",
-          "user": "@PowowoCat",
-          "img": "/assets/images/twitter.webp",
-          "link": "https://twitter.com/PowowoCat",
-          "description": "Follow me on Twitter for updates and tweets.",
-          "icon": "fa6-brands:twitter"
-        },
-        {
-          "platform": "bsky",
-          "name": "BlueSky",
-          "user": "@pow.bsky.social",
-          "img": "/assets/images/bsky.webp",
-          "link": "https://bsky.app/profile/pow.bsky.social",
-          "description": "Find me on Bsky for more updates.",
-          "icon": "ph:cloud-sun-fill"
-        },
-        {
           "platform": "tumblr",
           "name": "Tumblr",
           "user": "@powowo",
