@@ -4,9 +4,9 @@
         "icon": "ph:signature",
         "items": {
             "Main": [
-                "Pow", 
-                "Nasa", 
-                "Danger"
+                "Lea",
+                "Powo", 
+                "Nasa",
             ],
             "For fun": [
                 "Cat",
@@ -14,7 +14,7 @@
                 "Vrizzy"
             ],
             "Aliases": [
-                "Powo", 
+                "Danger", 
                 "Nghariad"
             ]
         }
