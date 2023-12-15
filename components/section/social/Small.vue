@@ -11,7 +11,7 @@
         p-0.5 
         grid justify-center content-center
         
-        h-20 w-20
+        h-16 w-16
         
         aspect-square
         
@@ -20,12 +20,12 @@
         v-if="img"
         :src=img 
         :alt="platform+' profile picture'"
-        class="overflow-hidden text-center align-middle max-h-16
+        class="overflow-hidden text-center align-middle max-h-14
         aspect-square frosted-glass self-center rounded-full border-2 border-white" 
       />
       <Icon
         v-else
-        class="overflow-visible h-full w-full p-1.5 max-h-16 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
+        class="overflow-visible h-full w-full p-1.5 max-h-14 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
         size="5rem"
         :name=icon
         />

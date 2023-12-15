@@ -15,6 +15,59 @@
     </div>
       
   </SectionCard>
+  
+  <SectionCard CardIcon="ph:sparkle-bold" CardTitle="Pronounce" id="Pronouns">
+      <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto ">
+        
+        <section 
+          class="flex flex-col col-span-4 transition-all gap-1 max-sm:hidden "
+        >
+          <h1 class="text-center">What's a Pow?</h1>
+          
+          <nuxt-img src="/assets/images/tis_a_pow.webp" alt="this ia a pow">
+            <SectionPronounsPrideflag
+              class="h-5"
+              flag="lesbian"
+            ></SectionPronounsPrideflag>          
+          </nuxt-img>
+          
+          <p class="text-justify  sm:pr-2">
+            Pow is a 21 year old trans webdev that resides in Vienna. Find out more on the [ <NuxtLink to="/about" class="underline decoration-dotted hover:decoration-solid">about</NuxtLink> ] page. ;)
+          </p>
+          
+          <SectionPronounsPrideflag
+            class="h-5"
+            flag="trans"
+          ></SectionPronounsPrideflag>
+          
+          //Donate button//
+          
+        </section>
+        <section class="col-span-8 transition-all pb-4 max-sm:col-span-12">
+          <div
+            v-for="(section, i) in pronouns"
+            :key="i"
+            class="
+              flex flex-col gap-2 max-sm:gap-1 py-2
+            "
+          >
+          
+            <h2 class="text-center">
+              <Icon class="-mt-1 mr-1" :name="section.icon"></Icon>{{ useCapitalize(section.name) }}
+            </h2>
+            
+            <ul class="grid auto-cols-auto grid-flow-row-dense max-lg:grid-cols-2 grid-cols-3 gap-2.5 max-sm:gap-1.5 text-sm max-sm:text-xs px-1.5">
+              <SectionPronounsListblock
+                v-for="(items, heading) in section.items"
+                :key="heading"
+                :heading="heading"
+                :items="items"
+              ></SectionPronounsListblock>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </SectionCard>
 
   <SectionCard CardIcon="ph:heart-bold" CardTitle="Socials and Links" id="Socials">
       <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto max-sm:gap-1">
@@ -85,64 +138,12 @@
       
     </SectionCard>
     
-    <SectionCard CardIcon="ph:sparkle-bold" CardTitle="Pronounce" id="Pronouns">
-      <div class="p-4 gap-2 grid grid-cols-12 auto-rows-auto ">
-        
-        <section 
-          class="flex flex-col col-span-4 transition-all gap-1 max-sm:hidden "
-        >
-          <h1 class="text-center">What's a Pow?</h1>
-          
-          <nuxt-img src="/assets/images/tis_a_pow.webp" alt="this ia a pow">
-            <SectionPronounsPrideflag
-              class="h-5"
-              flag="lesbian"
-            ></SectionPronounsPrideflag>          
-          </nuxt-img>
-          
-          <p class="text-justify  sm:pr-2">
-            Pow is a 21 year old trans webdev that resides in Vienna. Find out more on the [ <NuxtLink to="/about" class="underline decoration-dotted hover:decoration-solid">about</NuxtLink> ] page. ;)
-          </p>
-          
-          <SectionPronounsPrideflag
-            class="h-5"
-            flag="trans"
-          ></SectionPronounsPrideflag>
-          
-          //Donate button//
-          
-        </section>
-        <section class="col-span-8 transition-all pb-4 max-sm:col-span-12">
-          <div
-            v-for="(section, i) in pronouns"
-            :key="i"
-            class="
-              flex flex-col gap-2 max-sm:gap-1 py-2
-            "
-          >
-          
-            <h2 class="text-center">
-              <Icon class="-mt-1 mr-1" :name="section.icon"></Icon>{{ useCapitalize(section.name) }}
-            </h2>
-            
-            <ul class="grid auto-cols-auto grid-flow-row-dense max-lg:grid-cols-2 grid-cols-3 gap-2.5 max-sm:gap-1.5 text-sm max-sm:text-xs px-1.5">
-              <SectionPronounsListblock
-                v-for="(items, heading) in section.items"
-                :key="heading"
-                :heading="heading"
-                :items="items"
-              ></SectionPronounsListblock>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </SectionCard>
+    
     
     
 </template>
 
 <script lang="ts" setup>
-import { LazyClientOnly } from '#build/components';
 
   const appConfig = useAppConfig();
   const {links, pronouns} = appConfig;

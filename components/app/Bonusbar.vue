@@ -1,9 +1,12 @@
 <template>
   <div class="
     p-2
-    flex gap-4
+    flex align-middle justify-evenly flex-wrap
+    gap-2
     top-11 z-50
     sticky
+    max-md:w-full
+    max-md:px-8
   ">
     <NuxtLink
       v-for="link of links"
