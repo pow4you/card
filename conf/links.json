@@ -34,15 +34,6 @@
           "spotlight":true
         },
         {
-          "platform": "instagram",
-          "name": "Personal Instagram",
-          "user": "@PowowoCat",
-          "img": "/assets/images/personal_ig.webp",
-          "link": "https://instagram.com/powowocat",
-          "description": "Check out my personal Instagram profile.",
-          "icon": "fa6-brands:instagram"
-        },
-        {
           "platform": "tumblr",
           "name": "Tumblr",
           "user": "@powowo",
