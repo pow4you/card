@@ -32,15 +32,13 @@
           </nuxt-img>
           
           <p class="text-justify  sm:pr-2">
-            Pow is a 21 year old trans webdev that resides in Vienna. Find out more on the [ <NuxtLink to="/about" class="underline decoration-dotted hover:decoration-solid">about</NuxtLink> ] page. ;)
+            
           </p>
           
           <SectionPronounsPrideflag
             class="h-5"
             flag="trans"
           ></SectionPronounsPrideflag>
-          
-          //Donate button//
           
         </section>
         <section class="col-span-8 transition-all pb-4 max-sm:col-span-12">
