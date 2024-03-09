@@ -80,7 +80,7 @@ export default
           "platform": "paw-passport",
           "name": "PawPassport",
           "user": null,
-          "link": "https://paw-passport.vercel.app",
+          "link": "https://www.pawpassport.org",
           "img": null,
           "description": "PawPassport is on a mission to become the UNIVERSAL PASSPORT for your pets, connecting you to a world of opportunities and adventures. With tail-wagging, meow-worthy, and feather-ruffling enthusiasm, we're empowering you and your pets from all corners of the globe.",
           "icon": "lucide:paw-print",
