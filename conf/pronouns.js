@@ -1,3 +1,4 @@
+export default
 [
     {
         "name": "names",
@@ -33,3 +34,4 @@
         }
     }
 ]
+;

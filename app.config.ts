@@ -1,5 +1,5 @@
-import links from "@/conf/links.json";
-import pronouns from "@/conf/pronouns.json";
+import links from "~/conf/links";
+import pronouns from "~/conf/pronouns";
 
 export default defineAppConfig({
     navigation: [

@@ -51,8 +51,6 @@
       <section>
         <h2 class="">Technical Expertise</h2>
         <p class="">From Java to Python, VUE to React, I've got a wide range of skills to build robust and user-friendly web applications. I'm also adept at navigating databases with SQL and crafting RESTful services.</p>
-        <h2 class="">Continuous Learner</h2>
-        <p class="">I believe in lifelong learning and am always updating my skill set to stay ahead in the fast-paced world of tech.</p>
       </section>
     </div>
       
