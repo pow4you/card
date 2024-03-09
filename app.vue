@@ -1,4 +1,5 @@
 <template>
+  <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="ac7ddfba-a589-404b-90d8-5fbd0974be03"></script>
   <div>
     <AppNavbar />
     

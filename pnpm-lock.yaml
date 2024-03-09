@@ -31,6 +31,9 @@ devDependencies:
   nuxt:
     specifier: ^3.7.0
     version: 3.10.3(vite@5.1.4)
+  nuxt-umami:
+    specifier: ^2.6.0
+    version: 2.6.0
   yaml-loader:
     specifier: ^0.8.0
     version: 0.8.1
@@ -4851,6 +4854,10 @@ packages:
       - rollup
       - supports-color
     dev: false
+
+  /nuxt-umami@2.6.0:
+    resolution: {integrity: sha512-Q7MHWOCGCb3OGivTMXwxW9dNzCEyKFjmoW2RS0oFjlD9vfAOS4W/gjkfaE9ckNDxCniD3HzlxtqVo3cfRw+/4w==}
+    dev: true
 
   /nuxt@3.10.3(vite@5.1.4):
     resolution: {integrity: sha512-NchGNiiz9g/ErJAb462W/lpX2NqcXYb9hugySKWvLXNdrjeAPiJ2/7mhgwUSiZA9MpjuQg3saiEajr1zlRIOCg==}

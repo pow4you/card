@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     "nuxt-lodash",
     "@nuxtjs/device",
+    "nuxt-umami"
   ],
   
   devtools: { enabled: true }
