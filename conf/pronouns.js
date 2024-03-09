@@ -15,7 +15,7 @@ export default
                 "Vrizzy"
             ],
             "Aliases": [
-                "Danger", 
+                "Love", 
                 "Nghariad"
             ]
         }
