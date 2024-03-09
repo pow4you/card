@@ -15,36 +15,66 @@
           Who is Pow?
           <Icon class="mx-.5" name="ph:sparkle"></Icon> 
         </h1>
-        <p class="py-1">I'm Pow, a curious and dedicated web developer from Vienna. I love turning complex problems into beautiful, simple solutions that work for everyone.</p>
-        <h2 class="text-center pt-3">What Drives Me?</h2>
-        <p class="py-1">Driven by curiosity, I use this website to document my journey, share my creations, and connect with like-minded individuals and potential collaborators.</p>
+        <p class="p-1 grid place-content-center gap-3">
+          As a passionate quantum engineer, security specialist and web developer, I love exploring the unknown. 
+          In this world of technology, I see myself as someone who brings the non-existent into reality, creating the digital realms with a flair for innovation.
+
+          <div class="pl-3 flex items-stretch gap-3">
+            <span>
+              👀
+            </span> 
+            <span>
+              I’m particularly interested in the intricate dance of quantum computing and its potential to revolutionize our digital landscape. My fascination doesn't stop there; I'm equally captivated by the challenge of safeguarding our digital frontiers against evolving threats.
+            </span>
+          </div>
+
+          <div class="pl-4 flex items-stretch gap-3">
+            <span>
+              🌱
+            </span> 
+            <span>
+              Currently, I’m diving deep into the realms of quantum technology, specifically focusing on quantum cryptography and hardware optimization. The challenge of working with what's essentially the fabric of reality excites me, as it's a field brimming with both mystery and potential.
+            </span>
+          </div>
+
+          <div class="pl-4 flex items-stretch gap-3">
+            <span>
+              💞️
+            </span> 
+            <span>
+              I’m looking to collaborate on projects that push the boundaries of quantum computing and cybersecurity. I'm eager to join forces with like-minded innovators, whether it's developing cutting-edge quantum algorithms, or designing robust security systems.
+            </span>
+          </div>
+
+          I constantly seek to unveil and master the secrets of technology and use them to forge new paths. Let's connect and transform the 'nothingness' into something extraordinary!
+        </p>
       </section>
     </div>
       
   </SectionCard>
   
-  <SectionCard CardIcon="ph:potted-plant-bold" CardTitle="Interests" id="Interests">
+  <!-- SectionCard CardIcon="ph:potted-plant-bold" CardTitle="Interests" id="Interests">
     <div class="p-4">
       <section>
         <h1 class="pt-3">Dev Diaries</h1>
-        <p class="py-1">Web dev is my battleground and my playground. I take those cryptic lines of code and bend them to my will (usually). Sometimes it's a smooth sail; other times, it's like herding cats in a code editor. But the thrill of making something out of nothing? Absolutely worth it!</p>
+        <p class="p-1">Web dev is my battleground and my playground. I take those cryptic lines of code and bend them to my will (usually). Sometimes it's a smooth sail; other times, it's like herding cats in a code editor. But the thrill of making something out of nothing? Absolutely worth it!</p>
 
         <h2 class="pt-1">Quantum Quirks</h2>
-        <p class="py-1">Quantum tech is like the rebellious teen of the tech world - unpredictable but fascinating. Tinkering with quantum algorithms is like solving a puzzle designed by a mad scientist. It's tough, but hey, I eat tough for breakfast (with a side of quantum entanglement).</p>
+        <p class="p-1">Quantum tech is like the rebellious teen of the tech world - unpredictable but fascinating. Tinkering with quantum algorithms is like solving a puzzle designed by a mad scientist. It's tough, but hey, I eat tough for breakfast (with a side of quantum entanglement).</p>
         
         
         <h1 class="mt-6">Cosplay Chronicles</h1>
-        <p class="py-1">Let's talk about my cosplay triad - Angel Devil, Makima, and Vriska. Each one is a labor of love and a dash of chaos. Angel Devil has me sprouting wings and attitude, while Makima brings out a fierce leader vibe. And Vriska? She's my starry-eyed, mischievous side taking the stage.</p>
-        <p class="py-1">In the cosplay universe, I'm a shape-shifter. With every stitch and swipe of eyeliner, I'm not just putting on a costume; I'm embodying a story. It's not just dress-up; it's about breathing life into characters, and let's be real – it’s an excuse to use my coding skills for cool LED effects in my outfits!</p>
-        <p class="py-1">Conventions are my catwalks, where I strut my stuff and meet my tribe. It's a world where we celebrate the odd, the fantastic, and the fandom. The energy is electric, the creativity is off the charts, and the support is heartwarming. We're all a bit bonkers here, and it's beautiful.</p>
+        <p class="p-1">Let's talk about my cosplay triad - Angel Devil, Makima, and Vriska. Each one is a labor of love and a dash of chaos. Angel Devil has me sprouting wings and attitude, while Makima brings out a fierce leader vibe. And Vriska? She's my starry-eyed, mischievous side taking the stage.</p>
+        <p class="p-1">In the cosplay universe, I'm a shape-shifter. With every stitch and swipe of eyeliner, I'm not just putting on a costume; I'm embodying a story. It's not just dress-up; it's about breathing life into characters, and let's be real – it’s an excuse to use my coding skills for cool LED effects in my outfits!</p>
+        <p class="p-1">Conventions are my catwalks, where I strut my stuff and meet my tribe. It's a world where we celebrate the odd, the fantastic, and the fandom. The energy is electric, the creativity is off the charts, and the support is heartwarming. We're all a bit bonkers here, and it's beautiful.</p>
 
         <h2 class="pt-3">Vrizzy</h2>
-        <p class="py-1">Homestuck? More like Home-love! I'm all about those quirky characters and wild plot twists. It's a world where I can be as weird as I want, and nobody bats an eye. Plus, who doesn't love a good meme-fest wrapped in an epic saga?</p>
+        <p class="p-1">Homestuck? More like Home-love! I'm all about those quirky characters and wild plot twists. It's a world where I can be as weird as I want, and nobody bats an eye. Plus, who doesn't love a good meme-fest wrapped in an epic saga?</p>
         
       </section>
     </div>
       
-  </SectionCard>
+  </>
   
   <SectionCard CardIcon="ph:planet-bold" CardTitle="Skills" id="Skills">
     <div class="p-4">
@@ -73,7 +103,7 @@
       </section>
     </div>
       
-  </SectionCard>
+  </SectionCard !-->
 </template>
 
 <script lang="ts" setup>

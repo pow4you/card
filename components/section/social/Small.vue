@@ -8,44 +8,49 @@
     ">
     <div
       class='
-        p-0.5 
-        grid justify-center content-center
+        p-1 
+        grid place-content-center
         
-        h-16 w-16
-        
-        aspect-square
-        
+        min-w-16 w-16
+        min-h-full
+
         border-r border-white border-solid '>
       <nuxt-img 
         v-if="img"
         :src=img 
         :alt="platform+' profile picture'"
-        class="overflow-hidden text-center align-middle max-h-14
+        class="overflow-hidden text-center
         aspect-square frosted-glass self-center rounded-full border-2 border-white" 
       />
       <Icon
         v-else
-        class="overflow-visible h-full w-full p-1.5 max-h-14 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
+        class="overflow-visible h-full w-full p-1.5 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
         size="5rem"
         :name=icon
         />
     </div>
     <NuxtLink :to="link" class="
       flex-grow
-      px-4 py-1 
+      py-2
       
       cursor-pointer
       transition duration-300 ease-in-out 
       pink-hover
       
-      flex flex-col
+      flex flex-col gap-1
     ">
-      <header class="text-md font-bold tracking-wide">
-        <Icon class="aspect-square vertical-align-middle" 
+      <header class="
+        px-3
+        text-md font-bold tracking-wide
+      ">
+        <Icon class="h-2/3 -mt-1" 
             :name=icon
         /> {{ name }}
       </header>
-      <p class="text-xs justify-self-center grow tracking-wide">
+      <p class="
+        px-6
+        text-xs justify-self-center grow tracking-wide
+      ">
         {{ user }}
       </p>
     </NuxtLink>

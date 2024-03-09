@@ -9,7 +9,7 @@ export default
           "name": "Github",
           "user": "@pow4you",
           "link": "https://github.com/pow4you",
-          "img": "/public/assets/images/github.png",
+          "img": "/assets/images/github.png",
           "description": "Pow4you on Github. There you can find whatever I'm currently working on, what I'm learning and what I'm trying get better at.",
           "icon": "fa6-brands:github",
           "spotlight":true

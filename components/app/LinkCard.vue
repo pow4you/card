@@ -1,5 +1,5 @@
 <template>
-  <li
+  <div
     class="
       flex items-stretch
       w-full h-full 
@@ -16,22 +16,15 @@
         
         
         border-r border-white border-solid '>
-      <nuxt-img 
-        v-if="img"
-        :src=img 
-        :alt="platform+' profile picture'"
-        class=" overflow-hidden text-center align-middle max-h-24 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
-      />
       <Icon
-        v-else
         class="overflow-visible h-full w-full p-4 max-h-24 aspect-square frosted-glass self-center rounded-full border-2 border-white" 
         size="5rem"
-        :name=icon
+        :name=CardIcon
         />
       
     </div>
     <div class="flex-grow flex flex-col items-stretch">
-      <NuxtLink :to="link" class="
+      <NuxtLink :to="CardLink" class="
         px-4 py-1 
         
         cursor-pointer
@@ -40,25 +33,20 @@
         border-solid border-b border-white
       ">
         <header class="text-lg font-bold tracking-wide">
-          <Icon class="aspect-square vertical-align-middle -mt-1" 
-              :name=icon
-          /> {{ name }}
+          {{ CardTitle }}
         </header>
-        <p class="text-sm tracking-wide">
-          {{ user ? user : link }}
-        </p>
       </NuxtLink>
       
       <p class="flex-grow text-xs tracking-normal p-4">
-        {{ description }}
+        <slot />
       </p>
     </div>
-  </li>
+  </div>
 </template>
 
 <script lang="ts" setup>
-  const props = defineProps(["link", "img", "user", "name", "platform", "icon", "description"]);
-  const { link, img, user, name, platform, icon, description } = props;
+  const props = defineProps(["CardLink", "CardTitle", "CardIcon"]);
+  const { CardLink, CardTitle, CardIcon } = props;
 </script>
 
 
