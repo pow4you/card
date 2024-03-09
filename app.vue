@@ -10,7 +10,7 @@
 
 <script lang="ts" setup>
   const emj_list = ["😽","😽","😽","😽", "🥰", "😸", "😻", "🙉"];
-  const prepared_title = useSample(emj_list)+ " Pow's Card";
+  const prepared_title = "Pow's Card " + useSample(emj_list);
   useHead({
     title: prepared_title
   })
