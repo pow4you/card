@@ -24,7 +24,7 @@
               👀
             </span> 
             <span>
-              I’m particularly interested in the intricate dance of quantum computing and its potential to revolutionize our digital landscape. My fascination doesn't stop there; I'm equally captivated by the challenge of safeguarding our digital frontiers against evolving threats.
+              I am particularly interested in quantum computing and its potential to revolutionize our digital landscape. My fascination doesn't stop there; The challenge of protecting our digital frontiers from new threats captivates me equally.
             </span>
           </div>
 
@@ -33,7 +33,7 @@
               🌱
             </span> 
             <span>
-              Currently, I’m diving deep into the realms of quantum technology, specifically focusing on quantum cryptography and hardware optimization. The challenge of working with what's essentially the fabric of reality excites me, as it's a field brimming with both mystery and potential.
+              Currently, I am diving deep into the world of quantum technology, focusing on embedded software and quantum cryptography . The challenge of working with what is essentially the fabric of reality excites me, as it is an area that is full of possibility.
             </span>
           </div>
 
