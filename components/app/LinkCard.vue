@@ -2,14 +2,14 @@
   <div
     class="
       flex items-stretch
-      w-full h-full 
+      w-full h-fit 
       
       drop-shadow-md frosted-glass rounded-lg 
       border-white border-solid border-2
     ">
     <div
       class='
-        grid place-content-center
+        grid place-content-start
         h-full
         min-w-24 w-24
         p-2
@@ -44,7 +44,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
   const props = defineProps(["CardLink", "CardTitle", "CardIcon"]);
   const { CardLink, CardTitle, CardIcon } = props;
 </script>

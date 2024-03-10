@@ -104,10 +104,16 @@ export default
           "img": null,
           "description": "Overview page for webprojects I'm currently working on or have already finished. 🛠️",
           "icon": "noto:building-construction",
-          "spotlight":true
+          "spotlight":false
         },
       ]
-    }
+    },
+    // {
+    //   "name":"papers",
+    //   "icon":"ph:newspaper",
+    //   "items":[
+    //   ]
+    // },
   ]
 ;
 // https://happy-420.de/?ref=powo
