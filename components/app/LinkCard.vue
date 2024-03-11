@@ -6,6 +6,7 @@
       
       drop-shadow-md frosted-glass rounded-lg 
       border-white border-solid border-2
+      overflow-hidden
     ">
     <div
       class='

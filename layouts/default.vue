@@ -3,7 +3,7 @@
     class="
       flex flex-col items-center
       
-      pt-16 pb-6 gap-8
+      pt-16 pb-16 gap-8
     "
   >
     
