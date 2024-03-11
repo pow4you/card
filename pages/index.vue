@@ -94,13 +94,15 @@
           
           
         
-          <h2 class="text-center max-sm:hidden">Spotlight</h2>
+          
           
           <div class="
+            max-sm:hidden
             grid place-items-stretch gap-2
             overflow-hidden 
             mb-4
           ">
+            <h2 class="text-center ">Spotlight</h2>
             I'd really appreciate you supporting my FFS Fund. Every bit counts :)
             <NuxtLink 
               class="
@@ -114,13 +116,16 @@
               <Icon class="-mt-1" name="uil:medical" />  
               FFS Fund
             </NuxtLink>
+
+
+            <AppLinkCard CardLink="" CardTitle="Cosplay" CardIcon="game-icons:crystal-growth" >
+              <NuxtImg 
+                src="/assets/images/cosplay/Reki_1.jpg"
+              ></NuxtImg>
+            </AppLinkCard >
           </div>
 
-          <AppLinkCard CardLink="" CardTitle="Cosplay" CardIcon="game-icons:crystal-growth" >
-            <NuxtImg 
-              src="/assets/images/cosplay/Reki_1.jpg"
-            ></NuxtImg>
-          </AppLinkCard >
+          
             
 
         </section>
