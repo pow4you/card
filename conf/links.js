@@ -82,7 +82,7 @@ export default
           "user": null,
           "link": "https://gofund.me/863ebe94",
           "img": null,
-          "description": "I'd really appreatiate you suppoerting my FFS Fund. Every bit helps :)",
+          "description": "I'd really appreciate you supporting my FFS Fund. Every bit helps :)",
           "icon": "uil:medical",
           "spotlight":true
         },

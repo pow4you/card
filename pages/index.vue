@@ -101,7 +101,7 @@
             overflow-hidden 
             mb-4
           ">
-            I'd really appreatiate you suppoerting my FFS Fund. Every bit counts :)
+            I'd really appreciate you supporting my FFS Fund. Every bit counts :)
             <NuxtLink 
               class="
               text-center
