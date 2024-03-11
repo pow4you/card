@@ -37,7 +37,7 @@
         </header>
       </NuxtLink>
       
-      <p class="flex-grow text-xs tracking-normal p-4">
+      <p class="flex-grow text-xs tracking-normal">
         <slot />
       </p>
     </div>

@@ -88,15 +88,39 @@
         <section class="col-span-4 col-start-1 max-sm:col-span-12 transition-all py-4 max-sm:py-2 max-sm:pb-0">
           <h1 class="text-center">Socials</h1>
           <p class="text-justify  sm:pr-2">
-            This is my list of social media links. Basically everywhere I have an account that may be active or inactive, as well as Project pages I've been working on. So like basically my life lol.
+            This is my list of social media links. Basically everywhere I have an account that may be active or inactive, as well as Project pages I've been working on. 
           </p>
           <br />
           
           
         
           <h2 class="text-center max-sm:hidden">Spotlight</h2>
-          <p class="text-justify sm:pr-2 max-sm:hidden">
-          </p>
+          
+          <div class="
+            grid place-items-stretch gap-2
+            overflow-hidden 
+            mb-4
+          ">
+            I'd really appreatiate you suppoerting my FFS Fund. Every bit counts :)
+            <NuxtLink 
+              class="
+              text-center
+                p-2 font-extrabold cursor-pointer
+                transition duration-300 ease-in-out 
+                pink-hover
+                border-white border-solid border-2 rounded-lg" 
+              to="https://gofund.me/d53ecd05"
+            > 
+              <Icon class="-mt-1" name="uil:medical" />  
+              FFS Fund
+            </NuxtLink>
+          </div>
+
+          <AppLinkCard CardLink="" CardTitle="Cosplay" CardIcon="game-icons:crystal-growth" >
+            <NuxtImg 
+              src="/assets/images/cosplay/Reki_1.jpg"
+            ></NuxtImg>
+          </AppLinkCard >
             
 
         </section>
@@ -142,6 +166,7 @@
 </template>
 
 <script lang="ts" setup>
+
 
   const appConfig = useAppConfig();
   const {links, pronouns} = appConfig;

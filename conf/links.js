@@ -77,6 +77,17 @@ export default
       "icon":"ph:link",
       "items":[
         {
+          "platform": "gofundme",
+          "name": "Lea's FFS Fund",
+          "user": null,
+          "link": "https://gofund.me/863ebe94",
+          "img": null,
+          "description": "I'd really appreatiate you suppoerting my FFS Fund. Every bit helps :)",
+          "icon": "uil:medical",
+          "spotlight":true
+        },
+        
+        {
           "platform": "paw-passport",
           "name": "PawPassport",
           "user": null,
@@ -86,6 +97,7 @@ export default
           "icon": "lucide:paw-print",
           "spotlight":true
         },
+        
         {
           "platform": "happy420",
           "name": "Happy420",
