@@ -7,15 +7,12 @@ export default
             "Main": [
                 "Lea",
                 "Powo", 
-                "Nasa"
             ],
             "For fun": [
-                "Cat",
                 "Nicole",
                 "Vrizzy"
             ],
             "Aliases": [
-                "Love", 
                 "Nghariad"
             ]
         }
@@ -26,9 +23,9 @@ export default
         "items": {
             "Always": [
                 "She/Her", 
-                "It/Its" 
             ],
             "For fun": [
+                "It/Its",
                 "Cat/Cat's"
             ]
         }
