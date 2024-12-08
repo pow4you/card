@@ -19,7 +19,7 @@
     "@nuxt/image": "^1.0.0-rc.2",
     "@nuxtjs/device": "^3.1.1",
     "@vercel/analytics": "^1.2.2",
-    "nuxt-icon": "^0.5.0",
+    "nuxt-icon": "^0.6.10",
     "nuxt-lodash": "^2.5.0"
   }
 }
