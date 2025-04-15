@@ -24,9 +24,8 @@ export default
             "Always": [
                 "She/Her", 
             ],
-            "For fun": [
+            "Pookies only ;)": [
                 "It/Its",
-                "Cat/Cat's"
             ]
         }
     }
